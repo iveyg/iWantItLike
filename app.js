@@ -54,7 +54,11 @@ app.use(function(err, req, res, next) {
     message: err.message,
     error: {}
   });
+
 });
 
+app.listen(80);
 
 module.exports = app;
+
+
