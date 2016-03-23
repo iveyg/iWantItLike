@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   
 //res.send("Hello, this is our new startup. PUA MAKE IT RAIN mfk");
-res.render('index', { title: 'Express' });
+res.render('index');
 //res.sendFile('../views/front.html', {root: __dirname});
 
 });
