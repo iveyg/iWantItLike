@@ -32,12 +32,15 @@ block content
 									a(href="#") Something else here 
 								li
 									a(href="#") Action
-	div(id="myCourusel", class=["carousel", "slide"], data-ride="carousel")
-		ol(class="carousel-indicators")
-			li(data-target="myCarousel", data-slide-to="0", class="active")
-			li(data-target="myCarousel", data-slide-to="0")
-			li(data-target="myCarousel", data-slide-to="0")
-		div(class="carousel-inner", role="listbox")
-			div(class=["item", "active"])
-				img(class="first-slide", src="http://templates.designorbital.com/baleen/images/slide1.jpg", alt="First slide")
+	section(id="carousel-section", class="section-global-wrapper")
+		div(class="container-fluid")
+			div(class="row")
+				div(id="myCourusel", class=["carousel", "slide"], data-ride="carousel")
+					ol(class="carousel-indicators")
+						li(data-target="myCarousel", data-slide-to="0", class="active")
+						li(data-target="myCarousel", data-slide-to="0")
+						li(data-target="myCarousel", data-slide-to="0")
+					div(class="carousel-inner", role="listbox")
+						div(class=["item", "active"])
+							img(class="first-slide", src="http://templates.designorbital.com/baleen/images/slide1.jpg", alt="First slide")
 
