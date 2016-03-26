@@ -1,46 +1,41 @@
 extends layout
 
-block content
-	div(class="navbar-wrapper")
-		div(class="container")
-			nav(class=["navbar", "navbar-reverse", "navbar-static-top"])
-				div(class="container")
-					div(class="navbar-header")
-						button(type="button", class=["navbar-toggle", "collapsed"], data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar")
-							span(class="sr-only") Toggle navigation
-							span(class="icon-bar")  
-							span(class="icon-bar")  
-							span(class="icon-bar")
-						a(class="navbar-brand", href="#") Project Name
-					div(class=["navbar", "navbar-collapse"], id="navbar")
-						ul(class=["nav", "navbar-nav"])
-							li(class="active") 
-								a(href="#") Home
-							li 
-								a(href="#about") About
-							li 
-								a(href="#contact") Contact
-							li(class="dropdown")
-								a(href="#", class="dropdown-toggle", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false") Dropdown 
-									span(class="caret")
-							ul(class="dropdown-menu")
-								li
-									a(href="#") Action
-								li
-									a(href="#") Another action
-								li 
-									a(href="#") Something else here 
-								li
-									a(href="#") Action
-	section(id="carousel-section", class="section-global-wrapper")
-		div(class="container-fluid")
-			div(class="row")
-				div(id="myCourusel", class=["carousel", "slide"], data-ride="carousel")
-					ol(class="carousel-indicators")
-						li(data-target="myCarousel", data-slide-to="0", class="active")
-						li(data-target="myCarousel", data-slide-to="0")
-						li(data-target="myCarousel", data-slide-to="0")
-					div(class="carousel-inner", role="listbox")
-						div(class=["item", "active"])
-							img(class="first-slide", src="http://templates.designorbital.com/baleen/images/slide1.jpg", alt="First slide")
+block content 
+	header(class='container-fluid')
+		nav(class='container')
+			div(class='row')
+				img(src='' alt='' class='logo')
+				img(src='' alt='' class='logo-black')
+				ul(class='main-nav')
+					li
+						a(href='#features') Register
+					li
+						a(href='#features2') Log In
+					li
+						a(href='#features3') Blog
+
+		div(class='hero-text-box')
+			h1(class='my-css') Build you startups at a fraction of the cost
+			h3(class='my-css') Outsource your software development to professionals from all over the globe. Affordable. Automated. Tax-optimized
+			a(class='btn btn-default btn-info btn-lg', href='/newaccount') Call my Superviser
+	// Feature section
+	section(class='section-features container' id='features')
+		div(class='')
+			h2(class='my-css') Our Benefits
+			div(class='row')
+				div(class='my-benefits col-xs-12 col-sm-4 col-md-4 col-lg-4')
+					i(class='ion-ios-timer-outline icon-big')
+					h3 Assess hours
+					p Contact support and find out the quantity of hours needed to create your application
+				div(class='my-benefits col-xs-12 col-sm-4 col-md-4 col-lg-4')
+					i(class='ion-ios-paperplane-outline icon-big')
+					h3 Start your project 
+					p Assign workforce hours for your project & start building your project
+				div(class='my-benefits col-xs-12 col-sm-4 col-md-4 col-lg-4')
+					i(class='ion-ios-checkmark-empty icon-big')
+					h3 Track your progress 
+					p Supervisers will take care of developer efficiency. Just track the milestones and choose the speed
+				
+	//footer
+	footer
 
