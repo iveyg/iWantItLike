@@ -1,0 +1,125 @@
+extends layout
+
+block content
+	div(class="navbar-wrapper")
+		div(class="container")
+			nav(class=["navbar", "navbar-reverse", "navbar-static-top"])
+				div(class="container")
+					div(class="navbar-header")
+						button(type="button", class=["navbar-toggle", "collapsed"], data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar")
+							span(class="sr-only") Toggle navigation
+							span(class="icon-bar")  
+							span(class="icon-bar")  
+							span(class="icon-bar")
+						a(class="navbar-brand", href="#") Project Name
+					div(class=["navbar", "navbar-collapse"], id="navbar")
+						ul(class=["nav", "navbar-nav"])
+							li(class="active") 
+								a(href="#") Home
+							li 
+								a(href="#about") About
+							li 
+								a(href="#contact") Contact
+							li(class="dropdown")
+								a(href="#", class="dropdown-toggle", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false") Dropdown 
+									span(class="caret")
+							ul(class="dropdown-menu")
+								li
+									a(href="#") Action
+								li
+									a(href="#") Another action
+								li 
+									a(href="#") Something else here 
+								li
+									a(href="#") Action
+	section(id="carousel-section", class="section-global-wrapper")
+		div(class="container-fluid")
+			div(class="row")
+				div(id="myCourusel", class=["carousel", "slide"], data-ride="carousel")
+					ol(class="carousel-indicators")
+						li(data-target="myCarousel", data-slide-to="0", class="active")
+						li(data-target="myCarousel", data-slide-to="0")
+						li(data-target="myCarousel", data-slide-to="0")
+					div(class="carousel-inner", role="listbox")
+						div(class=["item", "active"])
+							img(class="first-slide", src="http://templates.designorbital.com/baleen/images/slide1.jpg", alt="First slide")
+							div(class="carousel-caption")
+								h3(class=["carousel-title", "hidden-xs"]) Baleen bootstrap template
+								p(class="carousel-body") Responsive one page parallax
+
+						div(class=["item"])
+							img(class="first-slide", src="http://templates.designorbital.com/baleen/images/slide3.jpg", alt="First slide")
+							div(class="carousel-caption")
+								h3(class=["carousel-title", "hidden-xs"]) Baleen bootstrap template
+								p(class="carousel-body") Responsive one page parallax
+
+						div(class=["item"])
+							img(class="first-slide", src="http://templates.designorbital.com/baleen/images/slide2.jpg", alt="First slide")
+							div(class="carousel-caption")
+								h3(class=["carousel-title", "hidden-xs"]) Baleen bootstrap template
+								p(class="carousel-body") Responsive one page parallax
+
+						// Controls
+						a(class=["left", "carousel-control"], href="#carousel-1", data-slide="prev")
+							span(class=["glyphicon","glyphicon-chevron-left"])
+						a(class=["right", "carousel-control"], href="#carousel-1", data-slide="next")
+							span(class=["glyphicon","glyphicon-chevron-right"])
+	// End carousel section
+	section(class=["services-section", "section-global-wrapper"], id='services')
+		div(class=['container'])
+			div(class=['row'])
+				div(class=['services-header'])
+					h3(class=['services-header-title']) Sevices
+					p(class=['services-header-body']) Serv body text
+			//begin services row 1 
+			div(class=['row', 'services-row', 'services-row-head', 'services-row-1'])
+				div(class=['col-lg-4', 'col-md-4', 'col-sm-4', 'col-xs-12'])
+					div(class=['services-group'])
+						i(class=['ion-ios-infinite-outline', 'icon-big'])
+						h4(class=['services-title']) Fully responsive	 		
+						p(class=['services-icon']) This is the new text that i want to be here 
+				div(class=['col-lg-4', 'col-md-4', 'col-sm-4', 'col-xs-12'])
+					div(class=['services-group'])
+						i(class=['ion-ios-infinite-outline', 'icon-big'])
+						h4(class=['services-title']) Fully responsive	 		
+						p(class=['services-icon']) This is the new text that i want to be here 
+				div(class=['col-lg-4', 'col-md-4', 'col-sm-4', 'col-xs-12'])
+					div(class=['services-group'])
+						i(class=['ion-ios-infinite-outline', 'icon-big'])
+						h4(class=['services-title']) Fully responsive	 		
+						p(class=['services-icon']) This is the new text that i want to be here 
+
+	// New site 
+	header
+		nav
+			div(class=['row'])
+				img(src='' alt='' class='logo')
+				img(src='' alt='' class='logo-black')
+				ul(class='main-nav')
+					li
+						a(href='#features') Features
+						a(href='#features2') Features2
+						a(href='#features3') Features3
+						a(href='#features4') Features4
+		div(class='hero-text-box')
+			h1 This is very cool
+			a
+	// Feature section
+	section(class='section-features container' id='features')
+		div(class='row')
+			h2 Program good
+			p(class='long-copy') Very long copy very very long copy 
+			div(class='row')
+				div(class='col-xs-12 col-md-4')
+					i(class='ion-ios-infinite-ouline icon-big')
+					h3 This is text
+					p This is paragraph
+				div(class='col-xs-12 col-md-4')
+					i(class='ion-ios-infinite-ouline icon-big')
+					h3 This is text
+					p This is paragraph
+				div(class='col-xs-12 col-md-4')
+					i(class='ion-ios-infinite-ouline icon-big')
+					h3 This is text
+					p This is paragraph
+
