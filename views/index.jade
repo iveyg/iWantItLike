@@ -14,28 +14,65 @@ block content
 					li
 						a(href='#features3') Blog
 
-		div(class='hero-text-box')
-			h1(class='my-css') Build you startups at a fraction of the cost
-			h3(class='my-css') Outsource your software development to professionals from all over the globe. Affordable. Automated. Tax-optimized
-			a(class='btn btn-default btn-info btn-lg', href='/newaccount') Call my Superviser
+		div(class='row')
+			div(class='col-md-5 col-md-offset-1')
+				div(class=" hero-text-box")
+					h1(class='my-css') Build you startups at a fraction of the cost
+					h3(class='my-css') Outsource your software development to professionals from all over the globe. Affordable. Automated. Tax-optimized
+					a(class='btn btn-default btn-info btn-lg', href='/newaccount') Call my Superviser
+			div(class='col-md-6')
+				form(method='post' action='#' class='contact-form')
+					div
+						p Build your custom application now
+					div
+						input(type='text' name='name' id='name' placeholder="Your name" required)
+					div
+						input(type='text' name='email' id='email' placeholder="Your email" required)
+					div
+						input(type='text' name='phone' id='phone' placeholder="Your phone number")
+					input(type='submit' class='btn-hero')
+		//div(class='hero-text-box')
+		
+	// Benefits
+	section(class='section-benefits container')
+		div(class='row')
+			div(class='benefit col-md-4')
+				first part
+			div(class='benefit col-md-4')
+				second part
+			div(class='benefit col-md-4')
+				third part
+
+	// Reinforcement statement 
+	section(class='section-reinf container-fluid')
+		div(class='row')
+			div(class='col-md-10 col-md-offset-1')
+				p Keep your burnrate low, outsource your software development
+
 	// Feature section
 	section(class='section-features container' id='features')
 		div(class='')
 			h2(class='my-css') Our Benefits
 			div(class='row')
-				div(class='my-benefits col-xs-12 col-sm-4 col-md-4 col-lg-4')
+				div(class='my-benefits col-md-2 col-md-offset-3')
 					i(class='ion-ios-timer-outline icon-big')
 					h3 Assess hours
 					p Contact support and find out the quantity of hours needed to create your application
-				div(class='my-benefits col-xs-12 col-sm-4 col-md-4 col-lg-4')
+				div(class='my-benefits col-md-2')
 					i(class='ion-ios-paperplane-outline icon-big')
 					h3 Start your project 
 					p Assign workforce hours for your project & start building your project
-				div(class='my-benefits col-xs-12 col-sm-4 col-md-4 col-lg-4')
+				div(class='my-benefits col-md-2')
 					i(class='ion-ios-checkmark-empty icon-big')
 					h3 Track your progress 
 					p Supervisers will take care of developer efficiency. Just track the milestones and choose the speed
+
 				
-	//footer
-	footer
+	// Footer
+	section(class='section-footer container-fluid')
+		div(class='row')
+			div(class='col-md-3 col-md-offset-2')
+				p New
+			div(class='col-md-6')
+				p New 2
 

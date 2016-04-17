@@ -18,16 +18,19 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url(../img/coding_with_style.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 80vh;
 }
 
 .hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
+    /*position: absolute;*/
+    /*width: 1140px;*/
+    /*top: 60%;*/
+    /*left: 50%;*/
     
-    transform: translate(-50%, -50%);
+    /*transform: translate(-50%, -50%);*/
+    margin-top: 10%;
+    padding-left:5%;
+    padding-right:5%; 
 }
 
 /*Main navi*/
@@ -78,14 +81,14 @@ h1.my-css {
     margin-top: 0;
     margin-bottom: 20px;
     color: #fff;
-    font-size: 240%;
+    font-size: 220%;
     word-spacing: 4px;
 
 }
 
 
 h2.my-css {
-    font-size: 180%;
+    font-size: 160%;
     word-spacing: 2px;
     color: #555;
     margin-bottom: 30px;
@@ -93,7 +96,7 @@ h2.my-css {
 }
 
 h3.my-css {
-    font-size: 140%;
+    font-size: 120%;
     margin-bottom: 15px;
     color: #fff;
 }
@@ -177,4 +180,80 @@ input[type="submit"]:active {
 
 .my-benefits {
 	text-align: center;
+}
+
+/****************/
+/* CONTACT FORM */
+/****************/
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5%;
+    background-color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 95%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+.btn-hero {
+    width: 90%;
+    margin: 5% 5%;
+    
+}
+
+.contact-form p {
+    font-weight: 3  00;
+    font-size: 140%;
+    margin: 5% 5%;
+    padding-top: 5%;     
+}
+
+/****************/
+/* BENEFITS     */
+/****************/
+
+.benefit {
+    height: 60px;
+    border-right: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.benefit:last-child {
+    border-right: 1px solid transparent;
+}
+
+/****************/
+/* REIFORCEMENT */
+/****************/
+
+.section-reinf {
+    background-color: #eee;
+    font-size: 180%;
+    text-align: center;
+}
+
+.section-reinf p {
+    margin: 35px auto;
+}
+
+/****************/
+/* FOOTER       */
+/****************/
+
+
+.section-footer {
+    background-color: #eee;
+    height: 160px;
+    margin-top: 40px;
+    padding-top: 50px;
 }
