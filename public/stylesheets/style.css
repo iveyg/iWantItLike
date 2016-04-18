@@ -21,6 +21,10 @@ header {
     height: 80vh;
 }
 
+header .row {
+    margin-top: 4%;
+}
+
 .hero-text-box {
     /*position: absolute;*/
     /*width: 1140px;*/
@@ -98,7 +102,7 @@ h1.my-css {
     margin-top: 0;
     margin-bottom: 20px;
     color: #fff;
-    font-size: 220%;
+    font-size: 260%;
     word-spacing: 4px;
 
 }
@@ -247,15 +251,16 @@ select {
 
 .benefit {
    
-    border-right: 1px solid #ccc;
+    
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
 
 }
 
-.benefit:last-child {
-    border-right: 1px solid transparent;
+.benefit:nth-child(2)  {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
 }
 
 /****************/
