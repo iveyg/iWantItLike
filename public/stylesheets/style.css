@@ -111,6 +111,14 @@ h2.my-css:after {
     margin-top: 30px;
 }
 
+h4.my-css {
+    font-size: 120%;
+    margin-bottom: 15px;
+    color: #000;
+    font-weight: 300;
+}
+
+
 .navbar--top {
 	background-color: transparent;
 }
@@ -221,7 +229,7 @@ select {
 /****************/
 
 .benefit {
-    height: 60px;
+   
     border-right: 1px solid #ccc;
     margin-top: 20px;
     margin-bottom: 20px;
