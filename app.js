@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+
 var index = require('./routes/index');
 var users = require('./routes/users');
 var newaccount = require('./routes/newaccount');
@@ -35,6 +36,8 @@ app.use(function(req, res, next) {
   next(err);
 });
 
+
+
 // error handlers
 
 // development error handler
@@ -60,7 +63,7 @@ app.use(function(err, req, res, next) {
 
 });
 
-app.listen(80);
+//app.listen(3000);
 
 module.exports = app;
 

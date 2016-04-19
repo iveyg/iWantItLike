@@ -299,7 +299,7 @@ div.works-step {
 
 .section-footer {
     background-color: #eee;
-    height: 160px;
+    padding-bottom: 40px;
     margin-top: 40px;
     padding-top: 50px;
 }

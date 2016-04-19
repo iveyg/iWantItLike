@@ -22,7 +22,7 @@ block content
 					h3(class='my-css') Outsource your software development to professionals from Eastern Europe
 					//- a(class='btn btn-default btn-info btn-lg', href='/newaccount') Call my Superviser
 			div(class='col-md-6')
-				form(method='post' action='#' class='contact-form')
+				form(method='post' action='/contact' class='contact-form')
 					div
 						p Build your custom application now
 					div
@@ -31,7 +31,7 @@ block content
 						input(type='text' name='email' id='email' placeholder="Your email" required)
 					div
 						input(type='text' name='phone' id='phone' placeholder="Your phone number")
-					input(type='submit' class='btn-hero')
+					input(type='submit' class='btn-hero' value='I want to receive info')
 		div(class='sticky-preselection')
 			div(class='row')
 				div(class='col-md-8 col-md-offset-2')
@@ -90,8 +90,15 @@ block content
 	// Footer
 	section(class='section-footer container-fluid')
 		div(class='row')
-			div(class='col-md-3 col-md-offset-2')
-				p New
-			div(class='col-md-6')
-				p New 2
+			div(class='col-md-6 col-md-offset-3')
+				form(method='post' action='/contact' class='contact-form')
+					div
+						p Build your custom application now
+					div
+						input(type='text' name='name' id='name' placeholder="Your name" required)
+					div
+						input(type='text' name='email' id='email' placeholder="Your email" required)
+					div
+						input(type='text' name='phone' id='phone' placeholder="Your phone number")
+					input(type='submit' class='btn-hero' value='I want to receive info')
 
