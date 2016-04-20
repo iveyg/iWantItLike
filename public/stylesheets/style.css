@@ -21,9 +21,7 @@ header {
     height: 80vh;
 }
 
-header .row {
-    margin-top: 4%;
-}
+
 
 .hero-text-box {
     /*position: absolute;*/
@@ -77,6 +75,12 @@ header .row {
     box-shadow: 0 2px 2px #f4f4f4;
     z-index: 9999;
     
+}
+
+.sticky-preselection img {
+    width: 50%;
+    height: auto;
+    margin-top: 8%;
 }
 
 .sticky-preselection p {
