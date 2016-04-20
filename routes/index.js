@@ -44,7 +44,7 @@ router.post('/contact', function(req, res, next) {
 	    //Email not sent
 	    if (error) {
 	        // res.render('contact', { title: 'Raging Flame Laboratory - Contact', msg: 'Error occured, message not sent.', err: true, page: 'contact' })
-	    	res.send('Error occured')
+	    	res.redirect('/');
 	    }
 	    //Yay!! Email sent
 	    else {
