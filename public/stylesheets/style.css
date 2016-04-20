@@ -35,8 +35,8 @@ header {
     
     /*transform: translate(-50%, -50%);*/
     margin-top: 10%;
-    padding-left:5%;
-    padding-right:5%; 
+    margin-left:5%;
+    margin-right:5%; 
 }
 
 /*Main navi*/
@@ -233,7 +233,9 @@ input[type="submit"]:active {
 input[type="text"],
 input[type="email"],
 select {
-    width: 95%;
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
     padding: 7px;
     border-radius: 3px;
     border: 1px solid #ccc;
@@ -311,3 +313,58 @@ div.works-step {
     margin-top: 40px;
     padding-top: 50px;
 }
+
+
+
+@media only screen and (max-width: 767px) {
+    .contact-div {
+        display: none;
+    }
+
+    .sticky-preselection img {
+        display: none;
+    }
+
+    .hero-text-box {
+    /*position: absolute;*/
+    /*width: 1140px;*/
+    /*top: 60%;*/
+    /*left: 50%;*/
+    
+    /*transform: translate(-50%, -50%);*/
+    margin-top: 20%;
+    margin-left:5%;
+    margin-right:5%; 
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url(../img/coding_with_style.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.sticky-preselection {
+    display: none;
+}
+
+.benefit:nth-child(2)  {
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+}
+}
+    
+/*    .steps-box {margin-top: 10px; }
+    .steps-box:last-child {margin-top: 10px;}
+    .works-steps {margin-bottom: 40px;}
+
+    .works-steps:last-of-type {margin-bottom:  60px;}
+
+    .app-screen {width: 50%;}*/
+/*@media only screen and (max-width: 767px) {
+    form {
+        display: none;
+    }
+    
+}   */
+
