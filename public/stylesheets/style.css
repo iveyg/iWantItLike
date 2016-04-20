@@ -21,6 +21,10 @@ header {
     height: 80vh;
 }
 
+.header-row {
+    margin-top: 6%;
+}
+
 
 
 .hero-text-box {
