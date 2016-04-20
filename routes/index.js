@@ -44,7 +44,7 @@ var transporter = nodemailer.createTransport(sendmailTransport({
 	    //Email not sent
 	    if (error) {
 	        // res.render('contact', { title: 'Raging Flame Laboratory - Contact', msg: 'Error occured, message not sent.', err: true, page: 'contact' })
-	    	res.send('Error');
+	    	res.redirect('/');
 	    }
 	    //Yay!! Email sent
 	    else {
